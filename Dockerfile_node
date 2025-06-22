@@ -1,0 +1,10 @@
+FROM node:22.8.0
+WORKDIR /node
+# RUN npx create-react-app . --template typescript --use-npm &&\
+#     npm install react-router-dom @types/react-router-dom &&\
+#     npm install redux react-redux @reduxjs/toolkit &&\
+#     npm install axios --save &&\
+#     npm install styled-components --save &&\
+#     npm install three @types/three @react-three/fiber @react-three/drei
+# nodeディレクトリの中で「npx create-react-app . --template typescript --use-npm」
+# を実行することで、reactとtypescriptのワークスペースを生成

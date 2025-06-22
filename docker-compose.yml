@@ -1,0 +1,25 @@
+services:
+  node:
+    build:
+      context: .
+      dockerfile: Dockerfile_node
+    volumes:
+      - ./node:/node
+    working_dir: /node
+    command: node
+    tty: true
+    ports:
+      # ホスト側のポート:コンテナ側のポート
+      - 3000:3000
+  python:
+    build:
+      context: .
+      dockerfile: Dockerfile_python
+    volumes:
+      - ./python:/python
+    working_dir: /python
+    command: python
+    tty: true
+    ports:
+      # ホスト側のポート:コンテナ側のポート
+      - 5000:5000
